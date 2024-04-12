@@ -46,15 +46,26 @@
 
 ### **Summary**
 
-Sum up your game idea in 2 sentences. A kind of elevator pitch. Keep it simple!
+Eres un hacker contratado para detener a 3 sistemas que se volvieron locos, utiliza todas tus habilidades para detenerlos.
 
 ### **Gameplay**
 
-What should the gameplay be like? What is the goal of the game, and what kind of obstacles are in the way? What tactics should the player use to overcome them?
+
+
+Al inicio del juego se te reparten 6 cartas, tienes que jugar estas 6 cartas para destruir el servidor enemigo. Algunas cartas que te dan ventajas te lanzaran a un minijuego si ganas el minijuego tendrás una ventaja en tu turno o el siguiente pero si lo fallas te bajara vida.
+El servidor enemigo te apagará cartas y te intentará sabotear. Tus cartas tienen cierta duración, al acabar tu turno será el turno de la máquina. 
+
+En su turno entrarás a un minijuego que pondrá a prueba tus reflejos y dexteridad, el minijuego depende de el servidor que estés atacando, cada uno más difícil que el otro.
+Al destruir por completo un servidor el jugador recibirá cartas especiales que tendrán habilidades poderosas que podrá usar solo una vez cada turno.
+
+El objetivo es destruir los 3 servidores.
+
 
 ### **Mindset**
 
-What kind of mindset do you want to provoke in the player? Do you want them to feel powerful, or weak? Adventurous, or nervous? Hurried, or calm? How do you intend to provoke those emotions?
+
+
+Queremos que el jugador esté pensando constantemente en ganar los minijuegos y jugar sus cartas, tambien que tema perder los minijuegos.
 
 ## _Technical_
 
@@ -289,3 +300,4 @@ _(define the main activities and the expected dates when they should be finished
 7. design music
 
 _(example)_
+
