@@ -1,0 +1,5 @@
+vamos a hostear el juego en una instancia de amplify en aws 
+la api va a ser una lambda function
+y una base de datos mysql en un rds de aws
+
+
