@@ -1,0 +1,13 @@
+se logro la creacion de un subdominio a bit-destroyer hosteando un juego webgl
+notas  para futuro, borrar cache al cargar el servicio de dns cuando se crea el alias al web bucket
+
+
+
+
+
+link: 
+
+test4.bit-destroyer.com
+
+
+
