@@ -1,0 +1,3 @@
+aqui se subiran todos los scripts de prueba para la creacion del juego 
+se buscara entender conceptos en un entorno seguro antes de implementarlos en el juego principal
+
