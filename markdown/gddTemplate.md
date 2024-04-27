@@ -46,26 +46,20 @@
 
 ### **Summary**
 
-Eres un hacker contratado para detener a 3 sistemas que se volvieron locos, utiliza todas tus habilidades para detenerlos.
+Eres un hacker contratado para detener a un hacker enemigo. Usa todas tus habilidades para ganar.
 
 ### **Gameplay**
 
+Es un juego PvP donde tu objetivo es vencer a tu oponente usando cartas.
+En tu turno tienes 2 opciones, puedes recoger cartas de las 3 barajas de cartas que tienes en frente. Cada baraja tiene un costo por carta, las cartas de ataque cuestan 3 puntos, las de bootcamp 2 y las de defensa 1.
+Tu otra opcion es jugar las cartas que tengas en tu mano.
 
 
-Al inicio del juego se te reparten 6 cartas, tienes que jugar estas 6 cartas para destruir el servidor enemigo. Algunas cartas que te dan ventajas te lanzaran a un minijuego si ganas el minijuego tendrás una ventaja en tu turno o el siguiente pero si lo fallas te bajara vida.
-El servidor enemigo te apagará cartas y te intentará sabotear. Tus cartas tienen cierta duración, al acabar tu turno será el turno de la máquina. 
-
-En su turno entrarás a un minijuego que pondrá a prueba tus reflejos y dexteridad, el minijuego depende de el servidor que estés atacando, cada uno más difícil que el otro.
-Al destruir por completo un servidor el jugador recibirá cartas especiales que tendrán habilidades poderosas que podrá usar solo una vez cada turno.
-
-El objetivo es destruir los 3 servidores.
 
 
 ### **Mindset**
 
-
-
-Queremos que el jugador esté pensando constantemente en ganar los minijuegos y jugar sus cartas, tambien que tema perder los minijuegos.
+Queremos que el jugador piense constantemente en como hacer la mejor estrategia para vencer a su oponente.
 
 ## _Technical_
 
@@ -73,13 +67,14 @@ Queremos que el jugador esté pensando constantemente en ganar los minijuegos y 
 
 ### **Screens**
 
-1. Title Screen
-    1. Options
-2. Level Select
-3. Game
-    1. Inventory
-    2. Assessment / Next Level
-4. End Credits
+1. Titulo de juego
+    1. Login
+2. Eleccion de primer turno
+3. Juego
+    1. agarrar carta
+    2. jugar carta
+4. pantalla de ganador
+5. pantall de perdedor
 
 _(example)_
 
@@ -89,7 +84,17 @@ How will the player interact with the game? Will they be able to choose the cont
 
 ### **Mechanics**
 
-Are there any interesting mechanics? If so, how are you going to accomplish them? Physics, algorithms, etc.
+Tienes 2 opciones en cada turno, jalar cartas de algunos de las 3 barajas en el playmat o jugar las que tienes.
+Si decides jalar mas cartas tienes que tomar en cuenta que en cada turno solo tienes 3 de energia para jugar como quieras, y cada carta de cada baraja tiene un costo especifico. Las cartas de ataque cuestan 3 de energia, las de bootcamp que te dan efectos a ti o a tus cartas cuestan 2, y las de defensa que te reciben el daño de las cartas por ti cuestan 1.
+
+Si decides jugar tus cartas tiens 3 opciones.
+Si juegas tus cartas de defensa las pondras sobre alguno de los slots que tienes en el playmat, tienes 3 canales, canal fisico, de wifi y de radio.
+Cada carta tiene cierta afinidad a un canal, esto lo puedes ver en la carta. Si pones una carta sobre el canal al que tiene afinidad, la carta tendra su maximo valor de defensa, de lo contrario la carta sufrira una penalizacion de 2 puntos.
+Las cartas de ataque son similares, pero la penalizacion es de 1 punto.
+Cuando juegas una carta de ataque sobre un carril, el daño de tu carta se hara contra las cartas de tu oponente.
+Cuando el daño de tu carta de ataque sobre pasa al de la carta de defensa de tu oponente la carta de defensa de tu oponente se destruye y lo que queda del daño pasa a la siguiente carta de su carril, si ya no tiene cartas o ese carril estaba vacio el daño va directamente a el oponente.
+
+Los 2 jugadores inician con 20 puntos de vida. Pierde quien llegue a 0.
 
 ## _Level Design_
 
